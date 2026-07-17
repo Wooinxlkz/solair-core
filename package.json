@@ -1,0 +1,51 @@
+{
+  "name": "solair-core",
+  "version": "1.0.0",
+  "description": "Framework-agnostic TypeScript engine for solar system design, hardware recommendation, energy forecasting, and financial analysis.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "keywords": [
+    "solar",
+    "renewable-energy",
+    "photovoltaic",
+    "pv-system",
+    "solar-calculator",
+    "energy-forecast",
+    "battery-sizing",
+    "charge-controller",
+    "roi-calculator",
+    "typescript"
+  ],
+  "author": "Wooinxlkz",
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wooinxlkz/solair-core.git"
+  },
+  "homepage": "https://github.com/Wooinxlkz/solair-core#readme",
+  "bugs": {
+    "url": "https://github.com/Wooinxlkz/solair-core/issues"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
