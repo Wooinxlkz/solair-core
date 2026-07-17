@@ -21,7 +21,7 @@ const panel = {
 };
 
 const pvConfig: PVArrayConfig = { selectedPanel: panel, panelCount: 10 };
-const sunConfig: SunConfig = { peakSunHoursPerDay: 5 };
+const sunConfig: SunConfig = { peakSunHours: 5 };
 
 const controller: ChargeControllerSpec = {
   manufacturer: 'Victron',
