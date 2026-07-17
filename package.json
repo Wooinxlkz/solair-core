@@ -18,7 +18,11 @@
   ],
   "scripts": {
     "build": "tsc",
-    "dev": "tsc --watch"
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "coverage": "vitest run --coverage",
+    "prepublishOnly": "npm run test && npm run build"
   },
   "keywords": [
     "solar",
@@ -30,7 +34,9 @@
     "battery-sizing",
     "charge-controller",
     "roi-calculator",
-    "typescript"
+    "lcoe",
+    "typescript",
+    "esm"
   ],
   "author": "Wooinxlkz",
   "license": "SEE LICENSE IN LICENSE",
@@ -43,7 +49,8 @@
     "url": "https://github.com/Wooinxlkz/solair-core/issues"
   },
   "devDependencies": {
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
   },
   "engines": {
     "node": ">=18.0.0"
